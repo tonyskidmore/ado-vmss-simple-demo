@@ -4,7 +4,7 @@
 
 This repository contains a simple standalone example of using the [terraform-azurerm-vmss-devops-agent](https://github.com/tonyskidmore/terraform-azurerm-vmss-devops-agent) Terraform module.  
 
-When the prerequisites are in place and the below Terraform workflow are executed the following will be created:
+When the prerequisites are in place and the below Terraform workflow is executed the following will be created:
 
 * Azure DevOps project.
 * Azure DevOps Azure Resource Manager Service Connection to the target Azure Subscription.
@@ -93,6 +93,8 @@ Once the prerequisites mentioned above are in place complete the following on a 
 * curl
 * sed
 * jq
+
+To create the Azure DevOps Project, Service connection, self-hosted scale set agent pool and the Azure VMSS perform the following:
 
 ````bash
 
