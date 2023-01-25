@@ -31,7 +31,7 @@ This example requires environment variables to be exported to supply the necessa
 
 1. Obtain the Azure Subscription ID that will be used for the test.
 
-2. Create an Azure Service Principal
+2. Create an Azure Service Principal, if you have permissions to do so in your Azure Active Directory.  If you do not have permissions you will need to request the creation of one or using an existing one.  If you are not creating the service principal using the az cli command below ensure that RBAC permissions have been given to the Subscription for the service principal i.e. Owner or Contributor + User Access Administrator.
 [az ad sp create-for-rbac](https://learn.microsoft.com/en-us/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac)
 
 Example:
@@ -76,9 +76,8 @@ Replacing the examples shown below to use your Azure DevOps PAT token and Azure 
 
 ````bash
 
- export AZURE_DEVOPS_EXT_PAT="ckusfcc8ope2soot1yuovmdvlgtfgj9nio2orfwyvv5jsgcnwwga"
+ export AZDO_PERSONAL_ACCESS_TOKEN="ckusfcc8ope2soot1yuovmdvlgtfgj9nio2orfwyvv5jsgcnwwga"
 export AZDO_ORG_SERVICE_URL="https://dev.azure.com/tonyskidmore"
-export TF_VAR_ado_ext_pat="$AZURE_DEVOPS_EXT_PAT"
 
 ````
 
@@ -100,7 +99,7 @@ export TF_VAR_azurerm_subscription_id="$ARM_SUBSCRIPTION_ID"
 
 ## Terraform workflow
 
-Once the prerequisites mentioned above are in place complete the following on a Linux based system, with the following commands installed.  For example, [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about):
+Once the prerequisites mentioned above are in place complete the following on a Linux based system, with the following commands installed.  For example, [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about) or [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) (which has all the software prerequisites already installed):
 
 * cat
 * curl
