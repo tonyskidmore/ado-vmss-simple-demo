@@ -8,8 +8,21 @@ When the prerequisites are in place and the below Terraform workflow is executed
 
 * Azure DevOps project.
 * Azure DevOps Azure Resource Manager Service Connection to the target Azure Subscription.
-* Azure Ubuntu 20.04 Linux [Virtual Machine Scale Set](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview)(VMSS).
 * Azure DevOps [Azure virtual machine scale set agent pool](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops) linked to the above Azure VMSS.
+* Azure Resource Group called `rg-demo-azure-devops-vmss`
+* Azure Virtual network and subnet, in the above resource group.
+* Azure Ubuntu 20.04 Linux [Virtual Machine Scale Set](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview)(VMSS).
+
+
+## Requirements
+
+You will need the following to be able to deploy the resources for this demo:
+
+* An Azure subscription.
+  _Note:_ you can get started with a [Azure free account][azure-free]
+
+* An [Azure DevOps][azdo] [Organization][azdo-org].
+  _Note:_ you can sign up for free in the above link.
 
 
 ## Prerequisites
