@@ -118,7 +118,7 @@ terraform apply tfplan
 
 ````
 
-This should have created the resources mentioned in the overview and you can now go ahead and initialize the `demo-azure-devops-vmss` repo in Repos and create a Starter pipeline in Pipelines.  The below is an updated example using the `demo-azure-devops-vmss` pool name created by this example.
+This should have created the resources mentioned in the overview and you can now go ahead and open up the `demo-azure-devops-vmss` project and initialize the `demo-azure-devops-vmss` repo in Repos and create a Starter pipeline in Pipelines.  The below is an updated example using the `demo-azure-devops-vmss` pool name created by this example.
 
 ````yaml
 
