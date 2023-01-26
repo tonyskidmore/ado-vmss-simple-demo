@@ -156,3 +156,7 @@ terraform apply tfplan
 ````
 
 _Note_: A more comprehensive example can be found in the `terraform-azurerm-vmss-devops-agent` module [demo_environment](https://github.com/tonyskidmore/terraform-azurerm-vmss-devops-agent) directory.
+
+[azure-free]: https://azure.microsoft.com/en-gb/free
+[azdo]: https://azure.microsoft.com/en-gb/products/devops
+[azdo-org]: https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization
