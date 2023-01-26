@@ -21,7 +21,7 @@ You will need the following to be able to deploy the resources for this demo:
 * An Azure subscription.
   _Note:_ you can get started with a [Azure free account][azure-free]
 
-* An [Azure DevOps][azdo] [Organization][azdo-org].
+* An [Azure DevOps][azdo] [Organization][azdo-org].  
   _Note:_ you can sign up for free in the above link.
 
 
