@@ -18,7 +18,7 @@ When the prerequisites are in place and the below Terraform workflow is executed
 
 You will need the following to be able to deploy the resources for this demo:
 
-* An Azure subscription.
+* An Azure subscription.  
   _Note:_ you can get started with a [Azure free account][azure-free]
 
 * An [Azure DevOps][azdo] [Organization][azdo-org].  
