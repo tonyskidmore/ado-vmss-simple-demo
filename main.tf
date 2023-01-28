@@ -80,7 +80,7 @@ resource "azuredevops_serviceendpoint_azurerm" "sub" {
 
 module "terraform-azurerm-vmss-devops-agent" {
   source                   = "tonyskidmore/vmss-devops-agent/azurerm"
-  version                  = "0.2.0"
+  version                  = "0.2.1"
   ado_org                  = var.ado_org
   ado_pool_name            = "demo-azure-devops-vmss"
   ado_project              = azuredevops_project.project.name
